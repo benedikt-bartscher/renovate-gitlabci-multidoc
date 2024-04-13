@@ -1,0 +1,9 @@
+spec:
+  inputs:
+    job-stage:
+---
+test:
+  stage: $[[ inputs.job-stage ]]
+  image: python:3.12.0
+  script:
+    - echo hi
